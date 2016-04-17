@@ -1,0 +1,18 @@
+name        : inputproto
+version     : 2.3.2
+release     : 6
+source     :
+    - http://xorg.freedesktop.org/releases/individual/proto/inputproto-2.3.2.tar.gz : 10eaadd531f38f7c92ab59ef0708ca195caf3164a75c4ed99f0c04f2913f6ef3
+license     :
+    - MIT
+summary     : X Input Extension
+component   : xorg.proto
+patterns    : /
+description : |
+    This extension defines a protocol to provide additional input devices management such as graphic tablets.
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
